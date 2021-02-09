@@ -5,36 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
+    <script src="https://kit.fontawesome.com/0f0e16d051.js" crossorigin="anonymous"></script>
     <title>To Do List</title>
 </head>
 <body>
-      
-    <form>
+    <div class="startWindow">
+        <h1>What is your name ? </h1>
+        <form>
+            <input type="text" placeholder="who are you?"/>
+            <input  type="checkbox" name="character" value="🧍‍♂️" style="font-size:100px;">🧍‍♂️</input>
+            <input type="checkbox" name="character" value="🧍‍♀️" style="font-size:100px;">🧍‍♀️</input>
+            <input type="checkbox" name="charcter" value="🦍" style="font-size:100px;">🦍</input>
+            <input type="submit" value="submit"/>
+        </form>    
+    </div>   
+
+
+    <form class="todoForm">
         <input type="text" placehoder="Please input.."  />
         <input type="submit" value="제출" />
+        <button>close</button>
     </form>
-    
-    <div class="frontWall">
-        <div>
-            <h1>To Do List</h1>
-            <ul class="todoList">       
-            </ul>
-        </div>
-        <div>
-            <h1>Finish List</h1>
-            <ul class="finishList">
-            </ul>
-        </div>
-        <div class="clock"></div>    
+    <div class="sliderWrapper">
+        <section class="frontWall">
+            <div>
+                <h1>To Do List</h1>
+                <ul class="todoList">       
+                </ul>
+            </div>
+            <div>
+                <h1>Finish List</h1>
+                <ul class="finishList">
+                </ul>
+            </div>
+            <div class="clock"></div>    
+        </section>
+        <section class=""></section>
+        <section class=""></section>
     </div>
     
     <div class="ground">                           
         <div class="you" style="width:50px; height:50px; background-color:red; position:absolute; bottom:0; left:0;"> </div>
         <div class="writeZone">Write Plan</div>
+        <div class="outDoor">집 나가기</div>
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
     </div>
- 
-    <script src="index.js"></script> 
+<!--  
+    <script src="index.js"></script>  -->
     <script src="character.js"></script>
     <script src="clock.js"></script>
+    <script src="startWindow.js"></script>
 </body>
 </html>
