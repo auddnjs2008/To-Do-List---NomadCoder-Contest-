@@ -1,7 +1,10 @@
+//import keyManager  from "./character.js";
+// startWindow는   팝업창처럼 만들어야 한다.
 const startModal = document.querySelector(".startWindow");
 const startForm = startModal.querySelector("form");
 const nameInput = startForm.querySelector("input[type=text]");
 const checkBoxes = startForm.querySelectorAll("input[type=checkbox]");
+const profile = JSON.parse(localStorage.getItem("Profile"));
 let check = null;
 
 const startSubmit = (e) => {
@@ -27,9 +30,5 @@ const start = () => {
   checkBoxes.forEach((item) => item.addEventListener("click", handleCheckBox));
 };
 
-if (!localStorage.getItem("Profile")) {
-  start();
-} else {
-  startModal.style.display = "none";
-  keyManage();
-}
+if (!profile || Object.keys(profile).length === 0) start();
+else startModal.style.display = "none";

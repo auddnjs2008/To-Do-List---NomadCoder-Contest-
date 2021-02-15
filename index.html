@@ -10,51 +10,95 @@
 </head>
 <body>
     <div class="startWindow">
+        <h1>Welcome to Your Home</h1>
         <h1>What is your name ? </h1>
         <form>
             <input type="text" placeholder="who are you?"/>
-            <input  type="checkbox" name="character" value="🧍‍♂️" style="font-size:100px;">🧍‍♂️</input>
-            <input type="checkbox" name="character" value="🧍‍♀️" style="font-size:100px;">🧍‍♀️</input>
-            <input type="checkbox" name="charcter" value="🦍" style="font-size:100px;">🦍</input>
+            <input  type="checkbox" name="character" value="🚁" id="1" style="font-size:100px;">🚁</input>
+            <input type="checkbox" name="character" value="🚗" id="2" style="font-size:100px;">🚗</input>
+            <input type="checkbox" name="charcter" value="🛵" id="3" style="font-size:100px;">🛵</input>
             <input type="submit" value="submit"/>
-        </form>    
+        </form>
+        <h5>저작권</h5>
+        <div class="copyRight">    
+        <a href='https://kr.freepik.com/vectors/background'>Background 벡터는 vectorpocket - kr.freepik.com가 제작함</a>
+        <a href='https://kr.freepik.com/vectors/background'>Background 벡터는 vectorpocket - kr.freepik.com가 제작함</a>
+       <a href='https://kr.freepik.com/vectors/background'>Background 벡터는 vectorpocket - kr.freepik.com가 제작함</a>
+       
+       <a href='https://kr.freepik.com/vectors/car'>Car 벡터는 vectorpouch - kr.freepik.com가 제작함</a>
+        <a href='https://kr.freepik.com/vectors/car'>Car 벡터는 vectorpouch - kr.freepik.com가 제작함</a>
+       
+       <a href='https://kr.freepik.com/vectors/background'>Background 벡터는 vectorpocket - kr.freepik.com가 제작함</a><a href='https://kr.freepik.com/vectors/water'>Water 벡터는 upklyak - kr.freepik.com가 제작함</a>
+       </div>     
     </div>   
 
 
     <form class="todoForm">
         <input type="text" placehoder="Please input.."  />
-        <input type="submit" value="제출" />
+        <input type="submit" value="submit" />
         <button>close</button>
     </form>
+
+    <div class="messageWrapper">
+        <h1>캐릭터가 말할 메세지 내용을 적어 추가해주세요 </br> 자신만의 명언을 만들어주세요 </h1>
+        <ul class="messageList"></ul>
+        <form class="messageForm">
+            <input type="text" placeholder="please write.."/>
+            <input type="submit" value="submit"/>
+        </form>
+        <button class="messageClose">close</button>
+    </div>
+
+    <div class="leftWall"></div>
     <div class="sliderWrapper">
         <section class="frontWall">
-            <div>
+            <div class="listWrapper">
                 <h1>To Do List</h1>
                 <ul class="todoList">       
                 </ul>
             </div>
-            <div>
+            <div class="listWrapper">
                 <h1>Finish List</h1>
                 <ul class="finishList">
                 </ul>
             </div>
-            <div class="clock"></div>    
+
+        </section>
+        <section class="">
+        <div class="clock"></div>    
+        <div class="weather">
+            <div class="city"></div>
+            <img src=""/>
+            <div class="weatherName"></div>
+            <div class="temperature"></div>
+        </div>    
         </section>
         <section class=""></section>
-        <section class=""></section>
     </div>
-    
+    <div class="rightWall">
+        <div class="window">
+            <!-- <img src="https://usecloud.s3-ap-northeast-1.amazonaws.com/TodoList/%EC%B0%BD%EA%B0%80.jpg"/> -->
+        </div>
+    </div>
+    <div class="backWall">
+    </div>
     <div class="ground">                           
-        <div class="you" style="width:50px; height:50px; background-color:red; position:absolute; bottom:0; left:0;"> </div>
+        <div class="you" style="width:50px; height:50px; position:absolute; bottom:50px; left:500px;">
+        </div>
+        <div class="message" style=" position:absolute; bottom:100px; left:500px;"></div>
         <div class="writeZone">Write Plan</div>
-        <div class="outDoor">집 나가기</div>
+        <div class="outDoor">DarkMode 켜기</div>
         <i class="fas fa-chevron-left"></i>
         <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-comment-alt"></i>
     </div>
-<!--  
-    <script src="index.js"></script>  -->
-    <script src="character.js"></script>
+
+    
+    <script src="index.js"></script> 
+    <script   src="startWindow.js"></script>
+    <script   src="character.js"></script>
+    <script src="message.js"></script>
     <script src="clock.js"></script>
-    <script src="startWindow.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

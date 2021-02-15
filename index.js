@@ -1,5 +1,5 @@
 const Form = document.querySelector(".todoForm");
-const input = document.querySelector("input");
+const input = Form.querySelector("input");
 const toDoList = document.querySelector(".todoList");
 const finishList = document.querySelector(".finishList");
 
@@ -104,6 +104,7 @@ const startPainter = (type) => {
 const handleSubmit = (e) => {
   e.preventDefault();
   const newList = input.value;
+  console.log(newList);
   const newId = Date.now();
   const newData = { content: newList, id: newId };
   if (newList !== "") {
